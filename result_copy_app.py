@@ -1,3 +1,10 @@
+r"""
+Copy results from OnTrack export xlsx to BoE result xlsx.
+
+!!! Although the code is tested, it is adviced to manually cross check the transferred results. !!!
+
+Author: Ahsan Habib, School of IT, Deakin.
+"""
 # !pip install openpyxl
 
 def install_openpyxl():
