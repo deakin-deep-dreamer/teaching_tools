@@ -87,7 +87,7 @@ def main():
     dst_total_count = dst_row - DEST_DATA_START
     print(f"Total {dst_update_count} rows updated out of {dst_total_count}, missing:{dst_total_count-dst_update_count}.")
     print(f"Missing IDs: {dst_missing_ids}")
-    dest_wb.save("results/SIT225-2024-T2-updated.xlsx")
+    dest_wb.save("SIT225-2024-T2-updated.xlsx")
 
 
 if __name__ == "__main__":
@@ -129,11 +129,11 @@ if __name__ == "__main__":
     try:
         SRC_MARK_COL = int(input("Source grade/mark column-number (default 4): "))
     except ValueError:
-        DEST_MARK_COL = 4
+        SRC_MARK_COL = 4
     try:
         SRC_COMMENT_COL = int(input("Source comment column-number (default 5): "))
     except ValueError:
-        DEST_MARK_COL = 5
+        SRC_COMMENT_COL = 5
     
     print("\nProcessing...\n")
     main()
