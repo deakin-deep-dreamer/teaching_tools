@@ -87,7 +87,9 @@ def main():
     dst_total_count = dst_row - DEST_DATA_START
     print(f"Total {dst_update_count} rows updated out of {dst_total_count}, missing:{dst_total_count-dst_update_count}.")
     print(f"Missing IDs: {dst_missing_ids}")
-    dest_wb.save("SIT225-2024-T2-updated.xlsx")
+    output_file = f"{DEST_XLSX_FILE.split('.')[0]}-updated.xlsx"
+    dest_wb.save(output_file)
+    print(f"Output saved to {output_file}")
 
 
 if __name__ == "__main__":
