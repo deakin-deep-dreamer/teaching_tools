@@ -91,7 +91,7 @@ def main():
 
     "Save to CSV file"
     output_file = f"{DST_CSV_FILE.split('.')[0]}_updated.csv"
-    df.to_csv(output_file)
+    df.to_csv(output_file, encoding='latin-1', index=False)
     print(f"\nSaved to: {output_file}")
 
 
